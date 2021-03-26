@@ -25,6 +25,12 @@ public class onceDoceTreceCatorceQuince {
             opcion = Integer.parseInt(reader.nextLine());
             switch (opcion) {
                 case 1:
+                    System.out.println("Ingrese el valor del radio del circulo: ");
+                    double radio = reader.nextDouble();
+                    double circunferencia = Math.round(2 * Math.PI * radio);
+                    double area = Math.round(Math.PI * Math.pow(radio, 2));
+                    System.out.println("Circunferencia del circulo: " + circunferencia);
+                    System.out.println("Area del circulo: " + area + "\n");
                     break;
                 case 2:
                     System.out.println("Ingrese una velocidad en Km: ");
@@ -33,16 +39,26 @@ public class onceDoceTreceCatorceQuince {
                     System.out.println("Su kilometro pasado a ms: " + velocidadCalculada);
                     break;
                 case 3:
-                    System.out.println("Ingrese la longitud del cateto 1");
-                    int cateto1 = Integer.parseInt(reader.nextLine());
-                    System.out.println("Ingrese la longitud del cateto 2");
-                    int cateto2 = Integer.parseInt(reader.nextLine());
-                    int hipotenusa = cateto1*cateto1 + cateto2*cateto2;
-                    System.out.println("Hipotenusa = " + hipotenusa);
+                    System.out.print("Ingrese la longitud del cateto A: ");
+                    double catetoA = reader.nextDouble();
+                    System.out.print("Ingrese la longitud del cateto B: ");
+                    double catetoB = reader.nextDouble();
+                    double hipotenusa = Math.pow(catetoA, 2) + Math.pow(catetoB, 2);
+                    System.out.println("El valor de la hipotenusa es: " + Math.sqrt(hipotenusa)); //Math.hypot()
                     break;
                 case 4:
+                    System.out.print("Ingrese el valor del radio de la esfera (en centimetros): ");
+                    double radioEsfera = reader.nextDouble();
+                    double volumen = 4.0 / 3.0 * (Math.pow(radioEsfera, 3) * Math.PI);
+                    System.out.println("El volumen de la esfera es: " + Math.round(volumen) + " centimetros cúbicos");
                     break;
                 case 5:
+                    System.out.print("Ingrese el valor de la altura: ");
+                    double altura = reader.nextDouble();
+                    System.out.print("Ingrese el valor de la base: ");
+                    double base = reader.nextDouble();
+                    double areaTriangulo = (base * altura) / 2;
+                    System.out.println("El area del triangulo es: " + areaTriangulo);
                     break;
                 default:
                     System.out.println("OPCION INCORRECTA");

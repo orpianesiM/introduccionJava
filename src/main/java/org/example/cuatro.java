@@ -13,12 +13,11 @@ public class cuatro {
         System.out.println("d = " + d);
         System.out.println("CAMBIANDO VALORES..");
         
-        int variableAuxiliar=b, variableAuxiliar2=d;
+        int variableAuxiliar=b;
         b=c;
+        c=a;
+        a=d;
         d=variableAuxiliar;
-        variableAuxiliar=a;
-        a=variableAuxiliar2;
-        c=variableAuxiliar;
 
         System.out.println("a = " + a);
         System.out.println("b = " + b);

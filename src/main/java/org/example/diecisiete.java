@@ -8,17 +8,6 @@ public class diecisiete {
         int i=0;
         int[] N={1,5,6,2,7};
 
-        /*int[] N = new int[5];
-        N[0]=1;
-        N[1]=4;
-        N[2]=2;
-        N[3]=5;
-        N[4]=0;
-        System.out.println("Su numero es: ");
-        for(i=0; i<N.length; i++){
-            System.out.print(N[i]);
-        }*/
-
         System.out.println("Su numero es: ");
         for(int numeros: N){
             System.out.print(numeros);
